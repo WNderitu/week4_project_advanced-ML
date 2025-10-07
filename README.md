@@ -63,3 +63,38 @@ Batch size and learning rate tuned empirically.
 Validation split used to monitor model generalization.
 
 The model demonstrates strong learning performance and excellent validation accuracy, indicating effective feature extraction and generalization.
+
+**5. Key Insights from EDA**
+
+Wheat images show clear class separability after normalization.
+
+Visual inspection confirms high inter-class visual consistency.
+
+Preprocessing significantly improves clarity and reduces noise in the input data.
+
+**6. Scope of the Solution**
+
+This model can be expanded into:
+
+* Mobile-based applications for field use by farmers.
+* Integration with drones for automated crop monitoring.
+* Cloud-based dashboards for large-scale agricultural analytics.
+
+**7. Constraints**
+
+* Performance highly dependent on dataset quality and label accuracy.
+* Limited dataset size may restrict generalization across geographies and lighting conditions.
+* Computational resources: Training CNNs on large image datasets requires GPU acceleration.
+
+**8. Stakeholders**
+
+* Farmers: Use model insights for disease management and crop planning.
+* Agricultural researchers: Enhance disease detection datasets.
+* Government and NGOs: Support food security initiatives with predictive analytics tools.
+
+**9. Tools & Libraries**
+
+* TensorFlow / Keras
+* NumPy, Pandas, Matplotlib, Seaborn
+* OpenCV & scikit-image for image preprocessing
+* Google Colab for development and GPU acceleration
