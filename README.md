@@ -8,11 +8,11 @@ The goal is to provide an automated, reliable system that assists farmers in imp
 Farmers face challenges in timely identifying wheat diseases, which directly affect productivity.
 This project aims to:
 
- Build a Convolutional Neural Network (CNN) capable of classifying wheat images into 5 distinct categories.
+ * Build a Convolutional Neural Network (CNN) capable of classifying wheat images into 5 distinct categories.
  
- Develop a scalable image classification pipeline using TensorFlow/Keras.
+ * Develop a scalable image classification pipeline using TensorFlow/Keras.
  
- Achieve a robust accuracy suitable for real-world agricultural use.
+ * Achieve a robust accuracy suitable for real-world agricultural use.
 
 **2. Deep Learning Approach**
 
@@ -24,15 +24,15 @@ A tf.keras.Sequential model is used, composed of convolutional and pooling layer
 
 The model consists of:
 
-Input rescaling layer – normalizes pixel values (Rescaling(1./255)).
+* Input rescaling layer – normalizes pixel values (Rescaling(1./255)).
 
-Three convolution blocks: each with Conv2D followed by MaxPooling2D.
+* Three convolution blocks: each with Conv2D followed by MaxPooling2D.
 
-Flattening layer – converts 2D feature maps into a 1D feature vector.
+* Flattening layer – converts 2D feature maps into a 1D feature vector.
 
-Dense layer with 128 units and ReLU activation.
+* Dense layer with 128 units and ReLU activation.
 
-Output layer – 5 neurons (one per class) with softmax activation.
+* Output layer – 5 neurons (one per class) with softmax activation.
 
 **Compilation Details**
 
